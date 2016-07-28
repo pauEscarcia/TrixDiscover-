@@ -7,8 +7,6 @@ CREATE TABLE trixdiscover."Prestador"
   "Lat" bigint,
   "Long" bigint,
   "Gerente" text,
-  "TelEmpresa" integer,
-  "TelCel" integer,
   "Email" text,
   "Pagina" text,
   "Facebook" text,
@@ -17,6 +15,8 @@ CREATE TABLE trixdiscover."Prestador"
   "Instagram" text,
   "Twitter" text,
   "Tumblr" text,
+  "TelEmpresa" text,
+  "TelCel" text,
   CONSTRAINT pk_prestador PRIMARY KEY ("IdPrestador")
 )
 WITH (
