@@ -4,8 +4,6 @@ CREATE TABLE trixdiscover."Prestador"
   "Fecha" date,
   "NomOrganización" text,
   "Direccion" text,
-  "Lat" bigint,
-  "Long" bigint,
   "Gerente" text,
   "Email" text,
   "Pagina" text,
@@ -17,6 +15,8 @@ CREATE TABLE trixdiscover."Prestador"
   "Tumblr" text,
   "TelEmpresa" text,
   "TelCel" text,
+  "Lat" text,
+  "Long" text,
   CONSTRAINT pk_prestador PRIMARY KEY ("IdPrestador")
 )
 WITH (
@@ -24,6 +24,7 @@ WITH (
 );
 ALTER TABLE trixdiscover."Prestador"
   OWNER TO postgres;
+
 
 
 CREATE TABLE trixdiscover."Categoria"
@@ -60,7 +61,6 @@ ALTER TABLE trixdiscover."Categoria"
 -- Table: trixdiscover."Actividad"
 
 -- DROP TABLE trixdiscover."Actividad";
-
 CREATE TABLE trixdiscover."Actividad"
 (
   "idActividad" bigserial NOT NULL,
@@ -68,9 +68,9 @@ CREATE TABLE trixdiscover."Actividad"
   "Descripcion" text,
   "Disponibilidad" text,
   "Duracion" text,
-  "Costo" integer,
   "idCategoria" bigint,
   "idPrestador" bigint,
+  "Costo" text,
   CONSTRAINT "Pk_Actividad" PRIMARY KEY ("idActividad"),
   CONSTRAINT "FK_ActividadesPrestador" FOREIGN KEY ("idPrestador")
       REFERENCES trixdiscover."Prestador" ("IdPrestador") MATCH SIMPLE
