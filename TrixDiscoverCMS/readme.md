@@ -7,6 +7,6 @@ Technology versions to use for the development:
 * Python Framework CMS: Django v1.9.8
 * CMS Django v3.3.1
 
-Install DJANGO
-    pip install Django==1.9.8
+Install DJANGO  `pip install Django==1.9.8`
+
     
