@@ -1,4 +1,5 @@
-# TrixDiscover CMS
+# TrixDiscoverCMS
+##Activities browser
 Technology versions to use for the development:
 
 * Database: Postgresql v9.5
