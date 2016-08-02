@@ -1,0 +1,4 @@
+cd Documents\TrixDiscover-\TrixDiscoverCMS
+env\Scripts\activate
+cd trixdiscover
+python manage.py runserver
